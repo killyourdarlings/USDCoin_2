@@ -1,1 +1,2 @@
-# USDCoin_2
+# ColorToken
+ColorToken
