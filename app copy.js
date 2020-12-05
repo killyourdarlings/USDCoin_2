@@ -3,7 +3,7 @@ ethereum.enable();
 
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 let signer = provider.getSigner();
-const contractAddress = "0x3EeCD0A7FE63ADf1ddC68dF065b1C01C6D4eB209";
+const contractAddress = "0xd58b13151f735F5085693b5fE6fc8f4Ab2Eb6929";
 const contractABI = [
   "function awardItem(address player, string memory tokenURI) public",
   "function balanceOf(address account) public view returns (uint256)",
@@ -21,8 +21,6 @@ let signerTokens = []; // an arry of all minted color tokens owned by current me
 
 const contract = new ethers.Contract(contractAddress, contractABI, provider);
 const tokenWithSigner = contract.connect(signer);
-
-const kio = "0xeE801da95f2C111941022cDf72A08938Ce703ECf";
 
 main();
 
