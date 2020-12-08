@@ -2,6 +2,11 @@
   margin: .25em 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Syne Mono', monospace;
+}
+
+body {
+  font-family: 'Syne Mono', monospace;
 }
 
 .container {
@@ -12,10 +17,33 @@
   margin: 0 auto;
 }
 
+
+
 button {
   padding: .25em;
 }
 
 input {
   padding: .25em;
+}
+
+.scanning {
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  transform: translate(-50%, -50%);
+  color: green;
+  font-size: 20px;
+  display: none;
+  text-align: center;
+}
+
+.earned {
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  transform: translate(-50%, -50%);
+  color: green;
+  font-size: 20px;
+  text-align: center;
 }
